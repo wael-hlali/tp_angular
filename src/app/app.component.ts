@@ -7,7 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'TP';
-
   teamName = 'liverpool fc';
   coachName = 'jürgen klopp';
 
