@@ -1,0 +1,211 @@
+<!-- NavBar -->
+
+<div class="navbar">
+  <a href="#LFC"><img class="logo" src="./assets/img/LFC.png" alt="Liverpool FC logo"></a>
+
+  <ul class="nav-list">
+    <li class="list-item"><a href="#">Home</a></li>
+    <li class="list-item"><a href="#team">Team Squad</a></li>
+    <li class="list-item"><a href="#coach">Coach</a></li>
+    <li class="list-item"><a href="#titles">Titles</a></li>
+    <li class="list-item"><a href="#gallery">Gallery</a></li>
+    <li class="list-item"><a href="https://store.liverpoolfc.com/">Store</a></li>
+  </ul>
+
+  <div class="hamburger">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </div>
+</div>
+
+
+
+
+<div id="home"></div>
+
+<div class="menu">
+  <div class="menu-line"></div>
+  <div class="menu-line"></div>
+  <div class="menu-line"></div>
+</div>
+
+<!--flexible grid-->
+<div class="row">
+  <div class="side">
+    <div id="coach">
+      <br>
+      <h2>CURRENT COACH</h2>
+      <h4>{{coachName | titlecase}}</h4>
+
+      <img class="logo2" src="./assets/img/klopp.png" alt="Jürgen Klopp">
+      <p [style]="para">A German professional football manager and former player who is the manager of Premier League
+        club Liverpool. He is widely regarded as one of the best managers in the world.</p>
+    </div>
+
+    <div id="team">
+      <br>
+      <h2>TEAM SQUAD</h2>
+      <h4>Goalkeepers</h4>
+      <div [class.section]="sectionApplied">
+        <p>1. Alisson Becker</p>
+        <p>13. Adrian</p>
+        <p>62. Caoimhin Kelleher</p>
+
+      </div><br>
+      <h4>Defenders :</h4>
+      <div [class.section]="sectionApplied">
+        <p>2. Joe Gomez</p>
+        <p>4. Virgil van Dijk</p>
+        <p>5. Ibrahima Konate</p>
+        <p>21. Kostas Tsimikas</p>
+        <p>26. Andy Robertson</p>
+        <p> 32. Joel Matip</p>
+        <p>46. Rhys Williams</p>
+        <p>47. Nathaniel Phillips</p>
+        <p>66. Trent Alexander-Arnold</p>
+      </div><br>
+      <h4>Midfielders :</h4>
+      <div [class.section]="sectionApplied">
+
+        <p>3. Fabinho</p>
+        <p>6. Thiago Alcantara</p>
+        <p>7. James Milner</p>
+        <p>8. Naby Keita</p>
+        <p>14. Jordan Henderson</p>
+        <p>15. Alex Oxlade-Chamberlain</p>
+        <p>17. Curtis Jones</p>
+        <p>19. Harvey Elliott</p>
+        <p>29. Arthur Melo</p>
+        <p>43. Stefan Bajcetic</p>
+
+      </div><br>
+      <h4>Forwards :</h4>
+      <div [class.section]="sectionApplied">
+        <p>9. Roberto Firmino</p>
+        <p>11. Mohamed Salah</p>
+        <p>18. Cody Gakpo</p>
+        <p>20. Diogo Jota</p>
+        <p>23. Luis Diaz</p>
+        <p>27. Darwin Nunez</p>
+        <p>28. Fabio Carvalho</p>
+      </div>
+    </div>
+  </div>
+  <div id="LFC" class="main">
+
+    <h1>{{teamName | uppercase}}</h1>
+
+    <div [class.section]="sectionApplied">
+      <p>Liverpool Football Club is a professional football club based in Liverpool, England. The club competes in the
+        Premier League, the top tier of English football. Founded in 1892, the club joined the Football League the
+        following year and has played its home games at Anfield since its formation.</p>
+      <div class="photo3">
+        <img src="./assets/img/LFC4.jpg" alt="Liverpool FC logo">
+      </div>
+    </div>
+    <div id="titles">
+      <br>
+      <h2>TITLES</h2>
+      <div [class.section]="sectionApplied">
+        <ul>
+          <li>
+            <p>6 Champions League wins (1977, 1978, 1981, 1984, 2005, 2019)</p>
+          </li>
+          <li>
+            <p>3 Europa League wins (1973, 1976, 2001)</p>
+          </li>
+          <li>
+            <p>4 European Super Cup wins (1977, 2001, 2005, 2019)</p>
+          </li>
+          <li>
+            <p>19 Premier League wins (1901, 1906, 1922, 1923, 1947, 1964, 1966, 1973, 1976, 1977, 1979, 1980, 1982,
+              1983,
+              1984, 1986, 1988, 1990, 2020)</p>
+          </li>
+          <li>
+            <p>8 FA Cup wins (1965, 1974, 1986, 1989, 1992, 2001, 2006, 2022)</p>
+          </li>
+          <li>
+            <p>9 League Cup wins (1981, 1982, 1983, 1984, 1995, 2001, 2003, 2012, 2022)</p>
+          </li>
+          <li>
+            <p>15 Community Shield wins (1964, 1965, 1966, 1974, 1976, 1977, 1979, 1980, 1982, 1986, 1988, 1989, 1990,
+              2001, 2006)</p>
+          </li>
+        </ul>
+        <p>Liverpool have won 64 titles in 7 different major competitions.</p>
+      </div>
+    </div>
+
+    <div id="gallery">
+      <br>
+      <h2>GALLERY</h2>
+      <div [class.section]="sectionApplied">
+        <div class="photo-gallery">
+          <div class="column">
+            <div class="photo3 zoom ">
+              <img src="./assets/img/gallery/img1.jpg" alt="LFC gallery Photo">
+            </div>
+            <div class="photo3 zoom">
+              <img src="./assets/img/gallery/img2.jpg" alt="LFC gallery Photo">
+            </div>
+            <div class="photo3 zoom">
+              <img src="./assets/img/gallery/img3.jpg" alt="LFC gallery Photo">
+            </div>
+            <div class="photo3 zoom">
+              <img src="./assets/img/gallery/img10.jpg" alt="LFC gallery Photo">
+            </div>
+            <div class="photo3 zoom">
+              <img src="./assets/img/gallery/img12.jpg" alt="LFC gallery Photo">
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="photo3 zoom">
+              <img src="./assets/img/gallery/img4.jpg" alt="LFC gallery Photo">
+            </div>
+            <div class="photo3 zoom">
+              <img src="./assets/img/gallery/img5.jpg" alt="LFC gallery Photo">
+            </div>
+            <div class="photo3 zoom">
+              <img src="./assets/img/gallery/img6.jpg" alt="LFC gallery Photo">
+            </div>
+            <div class="photo3 zoom">
+              <img src="./assets/img/gallery/img17.jpg" alt="LFC gallery Photo">
+            </div>
+            <div class="photo3 zoom">
+              <img src="./assets/img/gallery/img13.jpg" alt="LFC gallery Photo">
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="photo3 zoom">
+              <img src="./assets/img/gallery/img7.jpg" alt="LFC gallery Photo">
+            </div>
+            <div class="photo3 zoom">
+              <img src="./assets/img/gallery/img9.jpg" alt="LFC gallery Photo">
+            </div>
+            <div class="photo3 zoom">
+              <img src="./assets/img/gallery/img21.jpg" alt="LFC gallery Photo">
+            </div>
+            <div class="photo3 zoom">
+              <img src="./assets/img/gallery/img22.jpg" alt="LFC gallery Photo">
+            </div>
+            <div class="photo3 zoom">
+              <img src="./assets/img/gallery/img14.jpg" alt="LFC gallery Photo">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <br>
+  </div>
+</div>
+
+<!-- Footer -->
+<button><a class="top" href="#">Up</a></button>
+<div class="footer">
+  <p>Copyright &copy; 2023</p>
+</div>
